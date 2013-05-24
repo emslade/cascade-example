@@ -19,6 +19,12 @@ class Site
 	 */
 	private $domains;
 
+	/**
+	 * @OneToOne(targetEntity="Entities\Domain")
+	 * @JoinColumn(name="primary_domain_id", referencedColumnName="id")
+	 */
+	private $primaryDomain;
+
 	public function addDomain(Domain $domain)
 	{
 		$this->domains[] = $domain;

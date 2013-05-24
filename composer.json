@@ -1,5 +1,6 @@
 {
+	"minimum-stability": "dev",
     "require": {
-		"doctrine/orm": "2.3.2"
+		"doctrine/orm": "dev-master"
     }
 }
